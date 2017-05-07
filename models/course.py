@@ -21,14 +21,13 @@ class course(models.Model):
     date_end=fields.Date('End date', required=True, help='')
     price=fields.Float('Price', required=True, digits=(6,2), help='Price per student')
     state=fields.Selection(COURSE_STATE, 'state', required=False)
-    subject_ids=fields.One2many('course.subject', 'course_id', string='Subjects',ondelete="Set null")
+    subject_ids=fields.One2many('course.subjectv8', 'course_id', string='Subjects',ondelete="Set null")
     academy_id=fields.Many2one('res.partner', string='Academy', required=True, domain=[('is_academy','=',True)], ondelete='restrict')
     student_ids=fields.Many2many('res.partner','course_student_table',string='Students', domain=[('is_student','=',True)])
     teacher_ids=fields.Many2many('res.partner','course_teacher_table',string='Teachers', domain=[('is_teacher','=',True)])
-    time_table_id=fields.Many2one('time.table', string='Time table', required=True, ondelete='restrict')
-    #campo a corregir
-    time_table_id_detail_ids=fields.Related('time_table_id', 'time_detail_ids', type='one2many', relation='time.table.detail', string='Time table detail')
+    time_table_id=fields.Many2one('time.tablev8', string='Time table', required=True, ondelete='restrict')
+    time_table_id_detail_ids=fields.Char(related='time_table_id.time_detail_ids', string='Time table detail')
  
     _defaults = {
-            state= COURSE_STATE[0][0]
+            'state': COURSE_STATE[0][0],
     }
