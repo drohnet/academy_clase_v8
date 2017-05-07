@@ -1,6 +1,14 @@
 # -*- coding: utf-8 -*-
 from openerp import models, fields, api, _, exceptions
 
+DAYS_OF_WEEK = [('monday','Monday'),
+                ('tuesday','Tuesday'),
+                ('wednesday','Wednesday'),
+                ('thursday','Thursday'),
+                ('friday','Friday'),
+                ('saturday','Saturday'),
+                ('sunday','Sunday'),]
+
 """curso-materia-horario-detalle"""    
 class course_subject_time_table_detail(models.Models):    
     """ Course subject time table detail  """
