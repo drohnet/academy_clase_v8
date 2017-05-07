@@ -3,7 +3,7 @@ from openerp import models, fields, api, _, exceptions
 
 class subject(models.Model):    
     """ Subject  """
-    _name = 'subject'
+    _name = 'subjectv8'
     
     name=fields.Char('Name', required=True, size=64)
     description=fields.Text('Description')

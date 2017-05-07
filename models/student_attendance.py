@@ -9,7 +9,7 @@ ATTENDANCE_STATE = [('draft','Draft'),
 """Asistencia"""    
 class student_attendance(models.Model):
     """ Student Attendance Header  """
-    _name = 'student.attendance'
+    _name = 'student.attendancev8'
     
     name=fields.Char('Name', required=True, size=128)
     course_subject_id=fields.Many2one('course.subject', string="Course - Subject", required=True)

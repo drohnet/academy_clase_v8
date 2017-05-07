@@ -10,7 +10,7 @@ COURSE_STATE = [('draft','Draft'),
 """Cursos"""                     
 class course(models.Model):    
     """ Course  """
-    _name = 'course'
+    _name = 'coursev8'
     
     name=fields.Char('Name', required=True, size=64)
     description=fields.Text('Description')

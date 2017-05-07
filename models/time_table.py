@@ -4,7 +4,7 @@ from openerp import models, fields, api, _, exceptions
 """Horario"""
 class time_table(models.Model):    
     """ Time table  """
-    _name = 'time.table'
+    _name = 'time.tablev8'
     
     name=fields.Char(string='name' ,required=True, size=64)
     description=fields.Text('Description')

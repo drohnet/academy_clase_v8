@@ -3,7 +3,7 @@ from openerp import models, fields, api, _, exceptions
 
 """Relación curso-materia-horario"""
 class course_subject(models.Model):
-    _name = 'course.subject'
+    _name = 'course.subjectv8'
     
     name=fields.Char('Name', required=True, size=64,ondelete='cascade')
     course_id=fields.Char('Name', required=True, size=64,ondelete='cascade')

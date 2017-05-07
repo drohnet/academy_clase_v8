@@ -12,7 +12,7 @@ DAYS_OF_WEEK = [('monday','Monday'),
 """curso-materia-horario-detalle"""    
 class course_subject_time_table_detail(models.Models):    
     """ Course subject time table detail  """
-    _name = 'course.subject.time.table.detail'
+    _name = 'course.subject.time.table.detailv8'
     
     name=fields.Char('Name', required=True, size=16,ondelete='cascade')
     sequence=fields.Integer('Sequence',ondelete='cascade')

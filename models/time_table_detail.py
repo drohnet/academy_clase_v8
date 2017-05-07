@@ -12,7 +12,7 @@ DAYS_OF_WEEK = [('monday','Monday'),
 """Horario detalle"""    
 class time_table_detail(models.Model):    
     """ Time table detail  """
-    _name = 'time.table.detail'
+    _name = 'time.table.detailv8'
     
     name=fields.Char('Name', required=True, size=16)
     time_table_id=fields.Many2one('time.table', 'Time table', required=True)
