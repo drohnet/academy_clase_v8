@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<openerp>
+    <data> 
+        <record id="course_form_view" model="ir.ui.view">
+                <field name="name">Course Form v8</field>
+                <field name="model">coursev8</field>
+                <field name="arch" type="xml">
+                    <form string="Coursev8">
+                        <header>
+                            <button name="button_draft" string="Draft" type="workflow" states="confirmed" class="oe_highlight" groups="base.group_user"/>
+                            <button name="button_confirmed" string="Confirm" type="workflow" states="draft" class="oe_highlight" groups="base.group_user"/>
+                            <button name="signal_button_in_process" string="In Process" type="object" states="confirmed" class="oe_highlight" groups="base.group_user"/>
+                            <button name="button_done" string="Done" type="object" states="in_process" class="oe_highlight" groups="base.group_user"/>
+                            <button name="button_cancel" string="Cancel" type="object" states="draft,confirmed,in_process" class="oe_highlight" groups="base.group_user"/>
+                            <field name="state" widget='statusbar'/>
+                        </header>
+                        <sheet>
+                            <group>
+                                <group>
+                                    <group>
+                                        <field name="academy_id"/>
+                                        <field name="name"/>
+                                        <label for="hours"/>
+                                        <div>
+                                            <field name="hours" class="oe_inline"/> hours
+                                        </div>
+                                    </group>
+                                    <group>
+                                        <field name="min_students"/>
+                                        <field name="max_students"/>
+                                        <field name="price"/>
+                                    </group>
+                                </group>
+                            </group>
+                            <notebook>
+                                <page string="Information">
+                                    <group>
+                                        <group>
+                                            <field name="date_start"/>
+                                        </group>
+                                        <group>
+                                            <field name="date_end"/>
+                                        </group>
+                                    </group>
+                                    <group>
+                                        <field name="description"/>
+                                    </group>
+                                    <group>
+                                        <field name="time_table_id" on_change="onchange_time_table_id(time_table_id)"/>
+                                    </group>
+                                    <field name="time_table_id_detail_ids" readonly="1">
+                                        <tree default_order="sequence" >
+                                            <field name="name"/>
+                                            <field name="day_of_week"/>
+                                            <field name="hour_start" widget="float_time"/>
+                                            <field name="hour_end" widget="float_time"/>
+                                        </tree>
+                                    </field>
+                                    
+                                </page>
+                                <page string="Subjects">
+                                    <field name="subject_ids" 
+                                           context=" { 'default_course_id' : active_id, 'default_course_id_time_table_id':time_table_id}">
+                                        <tree >
+                                            <field name="subject_id"/>
+                                        </tree>
+                                    </field>
+                                        
+                                </page>
+                                <page string="Students">
+                                    <field name="student_ids"/>
+                                </page>
+                                <page string="Teachers">
+                                    <field name="teacher_ids"/>
+                                </page>
+                            </notebook>
+                            <!---<label for="subject_ids" string="Subjects"/>-->
+                        </sheet>
+                    </form>
+                </field>
+            </record>
+        
+    </data>
+</openerp>

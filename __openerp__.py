@@ -13,7 +13,7 @@
     'data': [
             'views/academy_form_view.xml',
             'views/academy_tree_view.xml',
-        
-        
+            'views/academy_course_form_view.xml',
+            'views/academy_course_tree_view.xml',    
     ],
 }

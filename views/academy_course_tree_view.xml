@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>        
+        <!--Course Views-->
+            <record id="course_tree_viewv8" model="ir.ui.view" >
+                <field name="name">Course Tree v8</field>
+                <field name="model">coursev8</field>
+                <field name="arch" type="xml">
+                    <tree string="Coursev8">
+                        <field name="academy_id" />
+                        <field name="name" />
+                        <field name="hours" />
+                        <field name="min_students"/>
+                        <field name="max_students"/>
+                        <field name="price"/>
+                        <field name="state"/>
+                    </tree>
+                </field>
+           </record>
+    </data>
+</openerp
