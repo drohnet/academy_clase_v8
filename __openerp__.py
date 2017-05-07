@@ -14,6 +14,9 @@
             'views/academy_form_view.xml',
             'views/academy_tree_view.xml',
             'views/academy_course_form_view.xml',
-            'views/academy_course_tree_view.xml',    
+            'views/academy_course_tree_view.xml',
+            'views/academy_course_subject_form_view.xml',
+            'views/academy_teacher_tree_view.xml',
+            'views/academy_teacher_form_view.xml',
     ],
 }

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+     <!-- Course-Subject Views-->
+        <record id="course_subject_form_viewv8" model="ir.ui.view" >
+            <field name="name">Course Subject Formv8</field>
+            <field name="model">course.subjectv8</field>
+            <field name="arch" type="xml">
+                <form string="Course Subject">
+                    <group>
+                        <group>
+                            <field name="name" invisible="0" />
+                            <field name="course_id"  required="0" invisible="0"/>
+                            <field name="course_id_time_table_id"  invisible="0" on_change="onchange_time_table_id(course_id_time_table_id)"/>
+                            <field name="subject_id" on_change="onchange_subject_id(subject_id, course_id)"/>
+                        </group>
+                    </group>
+                    <label for="child_ids"/>
+                    <field name="child_ids">
+                        <tree editable="bottom" default_order="sequence">
+                            <field name="sequence" widget="handle"/>
+                            <field name="name" />
+                            <field name="day_of_week"/>
+                            <field name="hour_start" widget="float_time"/>
+                            <field name="hour_end" widget="float_time"/>
+                        </tree>
+                    </field>
+                    <label for="time_table_id_detail_ids"/>
+                    <field name="time_table_id_detail_ids" readonly="1">
+                        <tree>
+                            <field name="name"/>
+                            <field name="day_of_week"/>
+                            <field name="hour_start"/>
+                            <field name="hour_end"/>
+                        </tree>
+                    </field>          
+                </form>
+            </field>
+        </record>
+    </data>
+</openerp>

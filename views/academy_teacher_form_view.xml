@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="teacher_form_view8" model="ir.ui.view">
+            <field name="name">Teacher Formv8</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <form string="Teacher">
+                    <group>
+                        <field name="name" />
+                    </group>
+                </form>
+            </field>
+        </record>
+     </data>
+</openerp>

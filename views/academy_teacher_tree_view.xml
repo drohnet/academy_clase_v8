@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <!-- Teacher Views -->
+        <record id="teacher_tree_viewv8" model="ir.ui.view" >
+            <field name="name">Teacher Treev8</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <tree string="Teacher">
+                    <field name="name" />
+                </tree>
+            </field>
+        </record>
+    </data>
+</openerp>
