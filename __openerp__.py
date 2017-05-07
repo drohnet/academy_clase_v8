@@ -11,6 +11,8 @@
     'category': "Training",
     'depends': ['base'],
     'data': [
+            'views/academy_form_view.xml',
+            'views/academy_tree_view.xml',
         
         
     ],
