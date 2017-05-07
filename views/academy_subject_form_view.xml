@@ -8,7 +8,7 @@
                 <field name="arch" type="xml">
                     <form string="Subject">
                         <group>
-                            <field name="name" on_change="onchange_name(name)"/>
+                            <field name="name"/><!-- on_change="onchange_name(name)"-->
                             <field name="hours" />
                         </group>
                             <field name="description" />
