@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*- 
 import course
 import course_subject_time_table_detail
-import course_subjectc
+import course_subjetc
 import res_partner
 import student_attendance
 import student_attendance_detail
