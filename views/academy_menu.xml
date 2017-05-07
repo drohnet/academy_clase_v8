@@ -31,7 +31,7 @@
 		</record>
         
         <record id="action_teacherv8" model="ir.actions.act_window" >
-			<field name="name">Teachers</field>
+			<field name="name">Teachers v8</field>
 			<field name="res_model">res.partner</field>
             <field name="view_type">form</field>
 			<field name="view_mode">tree,form</field>
