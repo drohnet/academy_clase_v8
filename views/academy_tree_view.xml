@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="academy_tree_viewv8" model="ir.ui.view">
+            <field name="name">Academy Tree v8</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <tree string="Academyv8">
+                        <field name="name" string="Academy name"/>
+                        <field name="academy_type"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</openerp>

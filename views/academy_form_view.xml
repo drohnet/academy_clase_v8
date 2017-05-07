@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+    
+         <!-- Academy Views -->
+            <record id="academy_form_viewv8" model="ir.ui.view">
+                <field name="name">Academy Form v8</field>
+                <field name="model">res.partner</field>
+                <field name="arch" type="xml">
+                    <form string="Academyv8">
+                        <group>
+                            <field name="name" on_change="onchange_name(name)" string="Academy name"/>
+                            <field name="academy_type"/>
+                        </group>
+                        <label for="course_ids"/>
+                            <field name="course_ids" readonly="1">
+                                <tree>
+                                    <field name="name" />
+                                    <field name="hours" />
+                                    <field name="min_students"/>
+                                    <field name="max_students"/>
+                                    <field name="price"/>
+                                    <field name="state"/>
+                                </tree>
+                            </field>
+                    </form>
+                </field>
+            </record>      
+    </data>
+</openerp>
