@@ -13,5 +13,5 @@ class res_partner(models.Model):
     course_ids=fields.One2many('course', 'academy_id', string='Courses'),
     is_academy=fields.Boolean(string='Is Academy')
     is_student=fields.Boolean(string='Is student')
-    is teacher=fields.Boolean(string='Is teacher')
+    is_teacher=fields.Boolean(string='Is teacher')
  
