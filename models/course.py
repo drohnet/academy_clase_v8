@@ -30,5 +30,5 @@ class course(osv.osv):
     time_table_id_detail_ids=fields.related('time_table_id', 'time_detail_ids', type='one2many', relation='time.table.detail', string='Time table detail')
  
     _defaults = {
-            state= COURSE_STATE[0][0],
+            state= COURSE_STATE[0][0]
     }
