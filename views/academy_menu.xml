@@ -98,51 +98,51 @@
 		</record>
 		
         
-		<menuitem id="root_menu_academy"
+		<menuitem id="root_menu_academyv8"
 		          name="Academy Root"        
                   />
 
-        <menuitem id="menu_academy" name="Menu"
+        <menuitem id="menu_academyv8" name="Menu"
                   parent="root_menu_academy" 
 				  sequence="10" 			      
 				  />
 				  
-            <menuitem id="menu_course" name="Courses"
+            <menuitem id="menu_coursev8" name="Courses"
                       parent="menu_academy" 
                       sequence="20" 
                       action="action_coursev8"/>
                       
-            <menuitem id="menu_teacher" name="Teachers"
+            <menuitem id="menu_teacherv8" name="Teachers"
                       parent="menu_academy" 
                       sequence="30" 
                       action="action_teacherv8"/>
                       
-            <menuitem id="menu_student" name="Students"
+            <menuitem id="menu_studentv8" name="Students"
                       parent="menu_academy" 
                       sequence="40" 
                       action="action_studentv8"/>
                       
-            <menuitem id="menu_attendance" name="Attendance"
+            <menuitem id="menu_attendancev8" name="Attendance"
                       parent="menu_academy" 
                       sequence="50" 
                       action="action_attendancev8"/>
                       
-            <menuitem id="menu_configuration" name="Configuration"
+            <menuitem id="menu_configurationv8" name="Configuration"
                   parent="root_menu_academy" 
 				  sequence="20" 			      
 				  />
                       
-            <menuitem id="menu_subject" name="Subjects"
+            <menuitem id="menu_subjectv8" name="Subjects"
                       parent="menu_configuration" 
                       sequence="10" 
                       action="action_subjectv8"/>          
                       
-            <menuitem id="menu_time_table" name="Time table"
+            <menuitem id="menu_time_tablev8" name="Time table"
                       parent="menu_configuration" 
                       sequence="20" 
                       action="action_time_tablev8"/>
                       
-            <menuitem id="menu_academy_ext" name="Academy"
+            <menuitem id="menu_academy_extv8" name="Academy"
                       parent="menu_configuration" 
                       sequence="30" 
                       action="action_academyv8"/>
