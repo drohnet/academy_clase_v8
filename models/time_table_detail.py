@@ -15,7 +15,7 @@ class time_table_detail(models.Model):
     _name = 'time.table.detailv8'
     
     name=fields.Char('Name', required=True, size=16)
-    time_table_id=fields.Many2one('time.table', 'Time table', required=True)
+    time_table_id=fields.Many2one('time.tablev8', 'Time table', required=True)
     day_of_week=fields.Selection(DAYS_OF_WEEK, 'Days of week', required=True)
     hour_start=fields.Float('From',digits=(4,2), required=True, help='Hour from')
     hour_end=fields.Float('To', digits=(4,2), required=True, help='Hour to')

@@ -16,7 +16,7 @@ class course_subject_time_table_detail(models.Model):
     
     name=fields.Char('Name', required=True, size=16,ondelete='cascade')
     sequence=fields.Integer('Sequence',ondelete='cascade')
-    course_subject_id=fields.Many2one('course.subject', 'Course-Subject relation', required=True,ondelete='cascade')
+    course_subject_id=fields.Many2one('coursev8.subject', 'Course-Subject relation', required=True,ondelete='cascade')
     day_of_week=fields.Selection(DAYS_OF_WEEK, 'Days of week', required=True,ondelete='cascade')
     hour_start=fields.Float('From',digits=(4,2), required=True, help='Hour from',ondelete='cascade')
     hour_end=fields.Float('To', digits=(4,2), required=True, help='Hour to',ondelete='cascade')
