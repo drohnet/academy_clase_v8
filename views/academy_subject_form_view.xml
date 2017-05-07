@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+     <!-- Subject Views -->
+            <record id="subject_form_viewv8" model="ir.ui.view" >
+                <field name="name">Subject Form v8</field>
+                <field name="model">subjectv8</field>
+                <field name="arch" type="xml">
+                    <form string="Subject">
+                        <group>
+                            <field name="name" on_change="onchange_name(name)"/>
+                            <field name="hours" />
+                        </group>
+                            <field name="description" />
+                    </form>
+                </field>
+            </record>
+    </data>
+</openerp>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <record id="subject_tree_viewv8" model="ir.ui.view" >
+                <field name="name">Subject Tree v8</field>
+                <field name="model">subjectv8</field>
+                <field name="arch" type="xml">
+                    <tree string="Subject">
+                        <field name="name" />
+                        <field name="hours" />
+                    </tree>
+                </field>
+        </record>
+    </data>
+</openerp>
