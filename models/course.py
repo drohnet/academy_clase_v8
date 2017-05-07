@@ -8,7 +8,7 @@ COURSE_STATE = [('draft','Draft'),
                 ('done','Done')]
 
 """Cursos"""                     
-class course(osv.osv):    
+class course(models.Model):    
     """ Course  """
     _name = 'course'
     
