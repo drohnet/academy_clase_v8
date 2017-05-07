@@ -22,6 +22,6 @@ class time_table_detail(models.Model):
     sequence=fields.Integer('Sequence')
     
     _defaults = {
-                sequence=1,
+                'sequence':1,
     }
   

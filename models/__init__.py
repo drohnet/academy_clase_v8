@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*- 
-import coursev8
-import course_subject_time_table_detailv8
-import course_subjectv8
+import course
+import course_subject_time_table_detail
+import course_subject
 import res_partner
-import student_attendancev8
-import student_attendance_detailv8
-import subjectv8
-import time_tablev8
-import time_table_detailv8
+import student_attendance
+import student_attendance_detail
+import subject
+import time_table
+import time_table_detail

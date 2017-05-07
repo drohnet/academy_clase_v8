@@ -18,5 +18,5 @@ class student_attendance(models.Model):
     state=fields.Selection(ATTENDANCE_STATE, 'state', required=True)
     
     _defaults = {
-                state=ATTENDANCE_STATE[0][0]
+                'state':ATTENDANCE_STATE[0][0],
     }

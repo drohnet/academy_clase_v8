@@ -10,7 +10,7 @@ DAYS_OF_WEEK = [('monday','Monday'),
                 ('sunday','Sunday'),]
 
 """curso-materia-horario-detalle"""    
-class course_subject_time_table_detail(models.Models):    
+class course_subject_time_table_detail(models.Model):    
     """ Course subject time table detail  """
     _name = 'course.subject.time.table.detailv8'
     
