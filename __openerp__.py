@@ -22,8 +22,9 @@
             'views/academy_student_tree_view.xml',
             'views/academy_time_table_tree_view.xml',
             'views/academy_time_table_form_view.xml',
-            'views/academy_subject_form_view-xml',
+            'views/academy_subject_form_view.xml',
             'views/academy_subject_tree_view.xml',
+            'views/academy_menu.xml',
             
     ],
 }

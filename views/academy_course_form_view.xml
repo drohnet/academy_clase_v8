@@ -48,6 +48,7 @@
                                     <group>
                                         <field name="time_table_id" on_change="onchange_time_table_id(time_table_id)"/>
                                     </group>
+                                    <!--
                                     <field name="time_table_id_detail_ids" readonly="1">
                                         <tree default_order="sequence" >
                                             <field name="name"/>
@@ -56,7 +57,7 @@
                                             <field name="hour_end" widget="float_time"/>
                                         </tree>
                                     </field>
-                                    
+                                    -->
                                 </page>
                                 <page string="Subjects">
                                     <field name="subject_ids" 

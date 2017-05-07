@@ -25,6 +25,7 @@
                             <field name="hour_end" widget="float_time"/>
                         </tree>
                     </field>
+                    <!--
                     <label for="time_table_id_detail_ids"/>
                     <field name="time_table_id_detail_ids" readonly="1">
                         <tree>
@@ -34,6 +35,7 @@
                             <field name="hour_end"/>
                         </tree>
                     </field>          
+                    -->
                 </form>
             </field>
         </record>

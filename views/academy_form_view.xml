@@ -12,6 +12,7 @@
                             <field name="name" on_change="onchange_name(name)" string="Academy name"/>
                             <field name="academy_type"/>
                         </group>
+                        <!--
                         <label for="course_ids"/>
                             <field name="course_ids" readonly="1">
                                 <tree>
@@ -22,7 +23,9 @@
                                     <field name="price"/>
                                     <field name="state"/>
                                 </tree>
+                                
                             </field>
+                        -->
                     </form>
                 </field>
             </record>      

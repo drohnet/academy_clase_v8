@@ -10,14 +10,14 @@
             <field name="context" eval="{'default_is_academy':True, 'default_academy_type':'public'}"/>
 		</record>
         
-        <record id="action_academy_view_tree_viewv8" model="ir.actions.act_window.view">
+        <record id="action_academy_tree_viewv8" model="ir.actions.act_window.view">
             <field eval="1" name="sequence"/>
             <field name="view_mode">tree</field>
             <field name="view_id" ref="academy_tree_viewv8"/>
             <field name="act_window_id" ref="action_academyv8"/>
         </record>
         
-        <record id="action_academy_view_form_viewv8" model="ir.actions.act_window.view">
+        <record id="action_academy_form_viewv8" model="ir.actions.act_window.view">
             <field eval="2" name="sequence"/>
             <field name="view_mode">form</field>
             <field name="view_id" ref="academy_form_viewv8"/>
@@ -39,17 +39,17 @@
             <field name="context" eval="{'default_is_teacher':True}"/>
 		</record>
         
-        <record id="action_teacher_view_tree_viewv8" model="ir.actions.act_window.view">
+        <record id="action_teacher_tree_viewv8" model="ir.actions.act_window.view">
             <field eval="1" name="sequence"/>
             <field name="view_mode">tree</field>
             <field name="view_id" ref="teacher_tree_viewv8"/>
             <field name="act_window_id" ref="action_teacherv8"/>
         </record>
         
-        <record id="action_teacher_view_form_viewv8" model="ir.actions.act_window.view">
+        <record id="action_teacher_form_viewv8" model="ir.actions.act_window.view">
             <field eval="2" name="sequence"/>
             <field name="view_mode">form</field>
-            <field name="view_id" ref="teacher_form_viewv8"/>
+            <field name="view_id" ref="teacher_form_view8"/>
             <field name="act_window_id" ref="action_teacherv8"/>
         </record>
         
@@ -62,14 +62,14 @@
             <field name="context" eval="{'default_is_student':True}"/>
 		</record>
         
-        <record id="action_student_view_tree_viewv8" model="ir.actions.act_window.view">
+        <record id="action_student_tree_viewv8" model="ir.actions.act_window.view">
             <field eval="1" name="sequence"/>
             <field name="view_mode">tree</field>
             <field name="view_id" ref="student_tree_viewv8"/>
             <field name="act_window_id" ref="action_studentv8"/>
         </record>
         
-        <record id="action_student_view_form_viewv8" model="ir.actions.act_window.view">
+        <record id="action_student_formviewv8" model="ir.actions.act_window.view">
             <field eval="2" name="sequence"/>
             <field name="view_mode">form</field>
             <field name="view_id" ref="student_form_viewv8"/>
@@ -99,51 +99,51 @@
 		
         
 		<menuitem id="root_menu_academyv8"
-		          name="Academy Root"        
+		          name="Academy Root v8"        
                   />
 
         <menuitem id="menu_academyv8" name="Menu"
-                  parent="root_menu_academy" 
+                  parent="root_menu_academyv8" 
 				  sequence="10" 			      
 				  />
 				  
             <menuitem id="menu_coursev8" name="Courses"
-                      parent="menu_academy" 
+                      parent="menu_academyv8" 
                       sequence="20" 
                       action="action_coursev8"/>
                       
             <menuitem id="menu_teacherv8" name="Teachers"
-                      parent="menu_academy" 
+                      parent="menu_academyv8" 
                       sequence="30" 
                       action="action_teacherv8"/>
                       
             <menuitem id="menu_studentv8" name="Students"
-                      parent="menu_academy" 
+                      parent="menu_academyv8" 
                       sequence="40" 
                       action="action_studentv8"/>
                       
             <menuitem id="menu_attendancev8" name="Attendance"
-                      parent="menu_academy" 
+                      parent="menu_academyv8" 
                       sequence="50" 
                       action="action_attendancev8"/>
                       
             <menuitem id="menu_configurationv8" name="Configuration"
-                  parent="root_menu_academy" 
+                  parent="root_menu_academyv8" 
 				  sequence="20" 			      
 				  />
                       
             <menuitem id="menu_subjectv8" name="Subjects"
-                      parent="menu_configuration" 
+                      parent="menu_configurationv8" 
                       sequence="10" 
                       action="action_subjectv8"/>          
                       
             <menuitem id="menu_time_tablev8" name="Time table"
-                      parent="menu_configuration" 
+                      parent="menu_configurationv8" 
                       sequence="20" 
                       action="action_time_tablev8"/>
                       
             <menuitem id="menu_academy_extv8" name="Academy"
-                      parent="menu_configuration" 
+                      parent="menu_configurationv8" 
                       sequence="30" 
                       action="action_academyv8"/>
              

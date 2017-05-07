@@ -26,7 +26,7 @@ class course(models.Model):
     student_ids=fields.Many2many('res.partner','course_student_table',string='Students', domain=[('is_student','=',True)])
     teacher_ids=fields.Many2many('res.partner','course_teacher_table',string='Teachers', domain=[('is_teacher','=',True)])
     time_table_id=fields.Many2one('time.tablev8', string='Time table', required=True, ondelete='restrict')
-    time_table_id_detail_ids=fields.Char(related='time_table_id.time_detail_ids', string='Time table detail')
+    #~ time_table_id_detail_ids=fields.Char(related='time_table_id.time_detail_ids', string='Time table detail')
  
     _defaults = {
             'state': COURSE_STATE[0][0],
