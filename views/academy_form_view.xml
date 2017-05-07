@@ -9,7 +9,7 @@
                 <field name="arch" type="xml">
                     <form string="Academyv8">
                         <group>
-                            <field name="name" on_change="onchange_name(name)" string="Academy name"/>
+                            <field name="name" string="Academy name"/><!-- on_change="onchange_name(name)" -->
                             <field name="academy_type"/>
                         </group>
                         <!--

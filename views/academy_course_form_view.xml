@@ -46,7 +46,7 @@
                                         <field name="description"/>
                                     </group>
                                     <group>
-                                        <field name="time_table_id" on_change="onchange_time_table_id(time_table_id)"/>
+                                        <field name="time_table_id"/><!-- on_change="onchange_time_table_id(time_table_id)" -->
                                     </group>
                                     <!--
                                     <field name="time_table_id_detail_ids" readonly="1">
