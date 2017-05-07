@@ -11,7 +11,7 @@ class res_partner(models.Model):
 
     academy_type=fields.Selection(ACADEMY_TYPE_LIST, 'Academy type', help="Select the academy type for the record")
     course_ids=fields.One2many('coursev8', 'academy_id', string='Courses'),
-    is_academy=fields.Boolean(string='Is Academy')
-    is_student=fields.Boolean(string='Is student')
-    is_teacher=fields.Boolean(string='Is teacher')
+    is_academyv8=fields.Boolean(string='Is Academy')
+    is_studentv8=fields.Boolean(string='Is student')
+    is_teacherv8=fields.Boolean(string='Is teacher')
  

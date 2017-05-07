@@ -6,8 +6,8 @@
 			<field name="res_model">res.partner</field>
 			<field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="domain">[('is_academy','=',True)]</field>
-            <field name="context" eval="{'default_is_academy':True, 'default_academy_type':'public'}"/>
+            <field name="domain">[('is_academyv8','=',True)]</field>
+            <field name="context" eval="{'default_is_academyv8':True, 'default_academy_type':'public'}"/>
 		</record>
         
         <record id="action_academy_tree_viewv8" model="ir.actions.act_window.view">
@@ -35,8 +35,8 @@
 			<field name="res_model">res.partner</field>
             <field name="view_type">form</field>
 			<field name="view_mode">tree,form</field>
-            <field name="domain">[('is_teacher','=',True)]</field>
-            <field name="context" eval="{'default_is_teacher':True}"/>
+            <field name="domain">[('is_teacherv8','=',True)]</field>
+            <field name="context" eval="{'default_is_teacherv8':True}"/>
 		</record>
         
         <record id="action_teacher_tree_viewv8" model="ir.actions.act_window.view">
@@ -58,8 +58,8 @@
 			<field name="res_model">res.partner</field>
 			<field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="domain">[('is_student','=',True)]</field>
-            <field name="context" eval="{'default_is_student':True}"/>
+            <field name="domain">[('is_studentv8','=',True)]</field>
+            <field name="context" eval="{'default_is_studentv8':True}"/>
 		</record>
         
         <record id="action_student_tree_viewv8" model="ir.actions.act_window.view">
