@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+        <!-- Student Views -->
+        <record id="student_form_viewv8" model="ir.ui.view" >
+            <field name="name">Student Form v8</field>
+            <field name="model">res.partner</field>
+            <field name="arch" type="xml">
+                <form string="Student">
+                    <group>
+                        <field name="name" />
+                    </group>
+                </form>
+            </field>
+        </record>
+     </data>
+</openerp>
