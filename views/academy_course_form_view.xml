@@ -46,7 +46,7 @@
                                         <field name="description"/>
                                     </group>
                                     <group>
-                                        <field name="time_table_id"/><!-- on_change="onchange_time_table_id(time_table_id)" -->
+                                        <field name="time_table_id"/>
                                     </group>
                                    
                                     <field name="time_table_id_detail_ids" readonly="1">
@@ -65,8 +65,7 @@
                                         <tree >
                                             <field name="subject_id"/>
                                         </tree>
-                                    </field>
-                                        
+                                    </field>                                
                                 </page>
                                 <page string="Students">
                                     <field name="student_ids"/>
@@ -75,11 +74,9 @@
                                     <field name="teacher_ids"/>
                                 </page>
                             </notebook>
-                            <!---<label for="subject_ids" string="Subjects"/>-->
                         </sheet>
                     </form>
                 </field>
             </record>
-        
     </data>
 </openerp>
