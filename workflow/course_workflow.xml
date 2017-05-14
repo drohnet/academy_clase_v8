@@ -3,8 +3,8 @@
     <data>
         <!--Workflow-->
         <record id="wkf_course" model="workflow">
-            <field name="name">course.basic</field>
-            <field name="osv">course</field>
+            <field name="name">course.basicv8</field>
+            <field name="model">coursev8</field>
             <field name="on_create">True</field>
         </record>
         

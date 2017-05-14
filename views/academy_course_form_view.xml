@@ -7,11 +7,11 @@
                 <field name="arch" type="xml">
                     <form string="Coursev8">
                         <header>
-                            <button name="button_draft" string="Draft" type="workflow" states="confirmed" class="oe_highlight" groups="base.group_user"/>
-                            <button name="button_confirmed" string="Confirm" type="workflow" states="draft" class="oe_highlight" groups="base.group_user"/>
-                            <button name="signal_button_in_process" string="In Process" type="object" states="confirmed" class="oe_highlight" groups="base.group_user"/>
+                            <button name="button_draft" string="Draft" type="object" states="confirmed,cancel,in_process,done" class="oe_highlight" groups="base.group_user"/>
+                            <button name="button_confirmed" string="Confirm" type="object" states="draft,cancel" class="oe_highlight" groups="base.group_user"/>
+                            <button name="button_in_process" string="In Process" type="object" states="cancel,confirmed" class="oe_highlight" groups="base.group_user"/>
                             <button name="button_done" string="Done" type="object" states="in_process" class="oe_highlight" groups="base.group_user"/>
-                            <button name="button_cancel" string="Cancel" type="object" states="draft,confirmed,in_process" class="oe_highlight" groups="base.group_user"/>
+                            <button name="button_cancel" string="Cancel" type="object" states="draft,confirmed,in_process,done" class="oe_highlight" groups="base.group_user"/>
                             <field name="state" widget='statusbar'/>
                         </header>
                         <sheet>
@@ -48,7 +48,7 @@
                                     <group>
                                         <field name="time_table_id"/><!-- on_change="onchange_time_table_id(time_table_id)" -->
                                     </group>
-                                    <!--
+                                   
                                     <field name="time_table_id_detail_ids" readonly="1">
                                         <tree default_order="sequence" >
                                             <field name="name"/>
@@ -57,7 +57,7 @@
                                             <field name="hour_end" widget="float_time"/>
                                         </tree>
                                     </field>
-                                    -->
+                                   
                                 </page>
                                 <page string="Subjects">
                                     <field name="subject_ids" 

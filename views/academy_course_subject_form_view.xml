@@ -11,8 +11,8 @@
                         <group>
                             <field name="name" invisible="0" />
                             <field name="course_id"  required="0" invisible="0"/>
-                            <field name="course_id_time_table_id"  invisible="0"<!-- on_change="onchange_time_table_id(course_id_time_table_id)"-->/>
-                            <field name="subject_id" <!-- on_change="onchange_subject_id(subject_id, course_id)"-->/>
+                            <field name="course_id_time_table_id"  invisible="0"/><!-- on_change="onchange_time_table_id(course_id_time_table_id)"-->
+                            <field name="subject_id" /><!-- on_change="onchange_subject_id(subject_id, course_id)"-->
                         </group>
                     </group>
                     <label for="child_ids"/>
