@@ -70,3 +70,19 @@ class course(models.Model):
     def button_in_process(self):
         self.state= 'in_process'
         return True
+    
+    #~ @api.multi
+    #~ def _check_previous_time_range(self):
+        #~ current_obj = self.browse([])
+        #~ previous_name_ids = self.search(
+                        #~ ['|','|',
+                        #~ '&',('hour_start','<=',current_obj.hour_start),('hour_end','>',current_obj.hour_start),
+                        #~ '&',('hour_start','<',current_obj.hour_end),('hour_end','>=',current_obj.hour_end),
+                        #~ '&',('hour_start','>',current_obj.hour_start),('hour_end','<',current_obj.hour_end),
+                        #~ ('id','!=',current_obj.id),
+                        #~ ('time_table_id','=',current_obj.time_table_id.id),
+                        #~ ('day_of_week','=',current_obj.day_of_week)],
+                        #~ )
+        #~ if previous_name_ids:
+            #~ return False
+        #~ return True

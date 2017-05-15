@@ -10,7 +10,7 @@
                     <group>
                         <group>
                             <field name="name" invisible="0" />
-                            <field name="course_id"  required="0" invisible="0"/>
+                            <field name="course_id"  required="0" invisible="1"/>
                             <field name="course_id_time_table_id"  invisible="0"/><!-- on_change="onchange_time_table_id(course_id_time_table_id)"-->
                             <field name="subject_id" /><!-- on_change="onchange_subject_id(subject_id, course_id)"-->
                         </group>
@@ -25,7 +25,7 @@
                             <field name="hour_end" widget="float_time"/>
                         </tree>
                     </field>
-                    <!--
+                    
                     <label for="time_table_id_detail_ids"/>
                     <field name="time_table_id_detail_ids" readonly="1">
                         <tree>
@@ -35,7 +35,7 @@
                             <field name="hour_end"/>
                         </tree>
                     </field>          
-                    -->
+                    
                 </form>
             </field>
         </record>
